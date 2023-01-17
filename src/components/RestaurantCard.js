@@ -1,0 +1,15 @@
+import {IMG_CDN_URL} from "../constants";
+
+export const RestaurantCard = ({name, cloudinaryImageId, cuisines,lastMileTravelString} ) => {
+    //  const {name, cloudinaryImageId, cuisines,lastMileTravelString} = restaurant.data;
+      return (
+          <div className="card">
+              <img src={IMG_CDN_URL+cloudinaryImageId} />
+              <h2> {name}</h2>
+              <h3>{cuisines.join(", ")}</h3>
+              <h4>Distance {lastMileTravelString} </h4>
+          </div>
+      );
+  };
+
+export default RestaurantCard;
