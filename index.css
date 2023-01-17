@@ -33,3 +33,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.search-container {
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
